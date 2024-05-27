@@ -11,12 +11,13 @@ function checkNomeCognome(inputtxt) {
 
 
 function checkEmail(inputtxt) {
-	var email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-	if(inputtxt.value.match(email)) 
-		return true;
-	
-	return false;	
-}
+            var mailformat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if(inputtxt.value.match(mailformat)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
 
 
 function checkData(inputtxt) {
